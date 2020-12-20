@@ -165,7 +165,7 @@ private fun getAttributesFromXmlNode(
 
                 val attributes = mutableMapOf<String, String>()
 
-                for (index in 0..xml.attributeCount) {
+                for (index in 0..xml.attributeCount-1) {
                     attributes[xml.getAttributeName(index)] = xml.getAttributeValue(index)
                 }
 
